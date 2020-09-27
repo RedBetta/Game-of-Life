@@ -17,11 +17,11 @@ def afficher_accueil():
         # le fichier 'parametres.py' en plein ecran
     else: # Sinon on cree la fenetre avec les dimensions demandees dans le fichier 'parametres.py' sans le plein ecran
         fenetre = pygame.display.set_mode((LARGEUR, HAUTEUR))
-    pygame.display.set_caption("Jeu de la Vie par Sam Lancelot et Rémi Bourcié") # On met le titre de la fenetre
+    pygame.display.set_caption("Jeu de la Vie par RedBetta") # On met le titre de la fenetre
     fenetre.fill(COULEUR_FOND_ACCUEIL) # On recouvre la fenetre avec la couleur COULEUR_FOND_ACCUEIL
 
     titre = BigPixelFont.render("Le Jeu de la Vie", True, COULEUR_TITRE)
-    auteurs = SmallPixelFont.render("par Sam Lancelot et Rémi Bourcié", True, COULEUR_AUTEUR)
+    auteurs = SmallPixelFont.render("par RedBetta", True, COULEUR_AUTEUR)
     fenetre.blit(titre, ((LARGEUR - titre.get_width()) // 2, (HAUTEUR - titre.get_height()) // 4))
     fenetre.blit(auteurs, ((LARGEUR - auteurs.get_width()) // 2, (HAUTEUR - auteurs.get_height()) // 4 + ECART_INTER_LIGNE))
 
